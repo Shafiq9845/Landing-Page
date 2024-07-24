@@ -1,0 +1,185 @@
+@font-face {
+  font-family: SpiderMan;
+  src: url(/Font/The\ Amazing\ Spider-Man.ttf);
+}
+@font-face {
+  font-family: Gary;
+  src: url(/Font/GaryDownleyScript_PERSONAL_USE_ONLY.otf);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: Math;
+}
+body {
+}
+
+.main-container {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 0.5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(7px);
+  flex-wrap: wrap;
+  color: rgb(255, 255, 255);
+  z-index: 0;
+
+}
+
+.profile,
+.option,
+.logo {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: larger;
+  width: max-content;
+}
+.profile svg {
+  width: 2rem;
+  margin-left: 15px;
+}
+
+.items {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  padding: 5%;
+}
+
+.option {
+  position: relative;
+  width: 500px;
+}
+
+.logo {
+  font-family: fantasy;
+}
+
+.items:hover {
+  font-family: fantasy;
+  transform: scale(1.1);
+  transition: 0.5s;
+  font-weight: 100;
+  border-radius: 10%;
+  color: #c87b04;
+}
+
+.menu {
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 650px) {
+  .main-container {
+    padding: 3% 2%;
+  }
+
+  .items {
+    width: max-content;
+    text-align: right;
+    padding: 10px 0;
+    padding-left: 5%;
+  }
+
+  .option {
+    display: none;
+    flex-direction: column;
+  }
+
+  .profile {
+    display: none;
+  }
+
+  .menu {
+    display: block;
+  }
+
+  .menu.active + .option {
+    display: flex;
+  }
+
+  img {
+    width: 1.5rem;
+  }
+}
+
+.body-container {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+  background-image: url("/image/creative\ .jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.slogan {
+  font-size: 2.5vw;
+  color: white;
+  margin: 0% 3% 20% 3%;
+  font-family: "SpiderMan";
+  text-transform: uppercase;
+}
+.title {
+  color: white;
+  font-size: 10vw;
+  margin: 25% 3% 0% 3%;
+  font-family: "SpiderMan";
+  text-transform: uppercase;
+}
+
+.title:hover {
+  text-transform: uppercase;
+  background: linear-gradient(40deg, #48cae4, #faedcd);
+  background-size: cover;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: 1s;
+}
+
+.content {
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content-img {
+  padding: 3%;
+}
+.content-img img {
+  border-radius: 5%;
+  width: 400px;
+  height: 500px;
+  box-shadow: rgba(87, 87, 87, 0.25) 0px 54px 55px,
+    rgba(161, 161, 161, 0.12) 0px -12px 30px,
+    rgba(170, 170, 170, 0.12) 2px 4px 10px,
+    rgba(182, 182, 182, 0.17) 0px 12px 13px,
+    rgba(255, 255, 255, 0.09) 0px -3px 5px;
+    font-family: Gary;
+}
+.content-text {
+  padding: 5%;
+  text-wrap: wrap;
+  font-size: 2.5vw;
+  color: white;
+}
+
+
+.parallax-effect{
+  width: 100%;
+
+}
+.parallax-effect div img{
+  width: 100%;
+  height: 50%;
+
+}
+
+
+footer {
+  position: relative;
+  bottom: 0;
+}
+
+
